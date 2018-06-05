@@ -1,0 +1,33 @@
+Welcome!  It appears you are looking in the /templates/ folder for WC Vendors Pro.  Cool!  You're close to customizing the heck out of your website by using our powerful templates.  Here's how to actually do it.  For this example, we'll copy the add/edit product template for customization:
+
+1.) Copy /wp-content/plugins/wc-vendors-pro/templates/dashboard/product-edit.php to /wp-content/themes/YOURTHEME/wc-vendors/dashboard/product-edit.php -- 
+
+That's it!  Just copy it and maintain the directory structure.  Now you can modify the template in any way you see fit.  Of course, our core templates are updated from time to time, so if you update Pro / Free and are overriding templates, make sure you read the changelog for a list of templates (if any) that have changed for that release.  You can always visit wp-admin > WooCommerce > System Status > scroll to the bottom to see the WC Vendors Pro templates that are out of date.
+
+Here's what each template actually does:
+/dashboard/dashboard-notice.php - For vendor notices
+/dashboard/dashboard.php - Main dashboard load file
+/dashboard/nav.php - Navigation links
+/dashboard/permission.php - Shown if user doesnt have permission to view the dashboard yet
+/dashboard/product-edit.php - The add new product or edit existing product template
+/dashboard/quick-links.php - Under the Pro Dashboard navigation, the quick buttons such as "Add Product" or "Add Coupon".
+/dashboard/shop_coupon-edit.php - Interface for adding/editing coupons
+/dashboard/store-settings.php - Collects all the store details from vendors
+/dashboard/order/order_details.php - Shows order details
+/dashboard/order/order_note.php - Inteface for vendors adding notes to orders
+/dashboard/order/order_note_form.php - Form code for order_note.php
+/dashboard/order/shipping-label.php - For the packing slip / shipping label output
+/dashboard/order/tracking_number.php - For vendors to add tracking numbers to orders
+/dashboard/reports/overview.php - Displays the vendor store information including total sales, orders, products and commission
+/dashboard/reports/reports.php - Vendor store graphs, recent products and recent orders
+
+/front/pro-vendor-list.php - Handles output for [wcv_pro_vendorslist]
+/front/vendor-pending-notice.php - Shown to pending vendors trying to access dashboard
+/front/vendor-signup-form.php - All form data for when a new vendor is signing up using /dashboard/
+/front/ratings/feedback-form.php - The forum for customers to leave vendors feedback/ratings
+/front/ratings/ratings-display-panel.php - Displays product ratings on single product pages
+/front/shipping/shipping-panel.php - Displays shipping details on single product pages
+
+/store/store-header.php - Shows the store details when visiting /vendors/store-name/ and on single product pages if the option in Pro is enabled
+/store/store-ratings.php - Shows vendors ratings/feedback on the vendors store
+/store/store-vacation-message.php - If vacation mode is enabled and a vendor has a vacation notice entered, fires this template
