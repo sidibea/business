@@ -1,3 +1,6 @@
+.hidden-option{
+    display:none;
+}
 .wg-widget-option-form {
 	width : 60%;
 	display : inline-block;
